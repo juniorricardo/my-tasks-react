@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,600&display=swap');
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  text-shadow: 0 3px 5px rgba(0,0,0,0.1);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing:antialiased;
+  min-width: 100vh;
+  min-width: 300px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

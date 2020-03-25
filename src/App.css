@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+  /*background: linear-gradient(to top, #ef473a, #cb2d3e);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #FD746C, #2C3E50);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: center;
+  pointer-events: none;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.3;
+  position: fixed;
+}
+
+.titulo-nav {
+  text-decoration: none;
+}
+h3 {
+  font-weight: 600;
+  margin-top: 2rem;
+  line-height:1.125;
+}
+
+.priority {
+  font-weight: 300;
+}
+
+.responsible {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.contador {
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
