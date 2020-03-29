@@ -10,45 +10,65 @@ class Form extends Component {
             description: '',
             priority: 'low'
         };
+        this.handleInput = this.handleInput.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
+
+    handleInput(e){
+      const {value,name} = e.target;
+      this.setState({
+        [name]: value
+      })
+    }
+
+    handleSubmit(e){
+      e.preventDefault();
+      this.props.onAddTodo(this.state);
+      alert("Sending...");
+    }
+
     render() {
         return (
-            <div className="miFormulario ml-4">
-                <div className="card mt-4">
-                    <div className="card-heard">
-                        <h3>Nueva tarea</h3>
-                    </div>
-                    <div className="card-body">
+            <div className="miFormulario">
+                <div className="card">
+                    <h3>New task</h3>
+                    <form className="card-body" onSubmit={this.handleSubmit}>
                         <div className="form-group">
                             <input className="form-control"
-                                type="text"
-                                name="title"
-                                placeholder="Title" />
+                                  type="text"
+                                  name="title"
+                                  onChange={this.handleInput}
+                                  placeholder="Title" />
                         </div>
                         <div className="form-group">
                             <input className="form-control"
-                                type="text"
-                                name="responsible"
-                                placeholder="Responsible" />
+                                  type="text"
+                                  name="responsible"
+                                  onChange={this.handleInput}
+                                  placeholder="Responsible" />
                         </div>
                         <div className="form-group">
                             <input className="form-control"
-                                type="text"
-                                name="description"
-                                placeholder="Description" />
+                                  type="text"
+                                  name="description"
+                                  onChange={this.handleInput}
+                                  placeholder="Description" />
                         </div>
                         <div className="form-group">
-                            <input className="form-control"
-                                type="text"
-                                name="priority"
-                                placeholder="Priority" />
+                            <select className="form-control"
+                                  name="priority"
+                                  onChange={this.handleInput}>
+                                  <option>low</option>
+                                  <option>medium</option>
+                                  <option>hight</option>
+                            </select>
                         </div>
                         <button className="btn btn-lg btn-block btn-primary"
                             type="submit"> Save </button>
-                    </div>
+                   </form>
                 </div>
             </div>
-        );
+        )
     }
 }
 

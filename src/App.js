@@ -9,37 +9,43 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      title: "Mi notas",
+      title: "Tasks App",
       todos
     }
+    this.handleAddTodo = this.handleAddTodo.bind(this);
   }
 
+  handleAddTodo(todo){
+    this.setState({
+      todos: [...this.state.todos, todo]
+    })
+  }
 
   render() {
-    const todo = this.state.todos.map((todo, i) => {
+    const toDoList = this.state.todos.map((todo, i) => {
       return (
-        <div className="col-lg-4 col-md-6 mt-4" key={i}>
-          <div className="card">
+        <div className="card col-xl-3 col-lg-4 col-md-6 col-sm-12" key={i}>
             <div className="card-head">
-              <h3>{todo.title}</h3>
-              <span className="priority badge badge-pill badge-danger">{todo.priority}</span>
+              <h3 className="card-title">{todo.title}</h3>
+              <span className="priority badge badge-pill badge-danger">
+                {todo.priority}
+              </span>
             </div>
             <div className="card-body">
-              <p>{todo.description}</p>
+              <p className="card-text">{todo.description}</p>
               <hr />
-              <p className="responsible">{todo.responsible}</p>
+              <p className="card-text responsible">{todo.responsible}</p>
             </div>
-          </div>
         </div>
       )
     })
 
     return (
       <div className="App">
-        {/* <Navigation titulo="Este es mi titulo"/> */}
         <img src={logo} className="App-logo" alt="logo" />
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a className="navbar-brand" href="#">{this.state.title}
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+          <a className="navbar-brand" href="">
+            {this.state.title}
             <span className="contador ml-3 align-middle priority badge badge-pill badge-light">
               {this.state.todos.length}
             </span>
@@ -47,19 +53,18 @@ class App extends React.Component {
 
         </nav>
 
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-4 col-md-5">
-              <Form />
+        <div className="container-fluid">
+          <div className="row justify-content-md-center">
+            <div className="col-xl-2 col-lg-3 col-md-4">
+              <Form onAddTodo={this.handleAddTodo}/>
             </div>
-            <div className="col-lg-8 col-md-7">
-              <div className="row">
-                {todo}
+            <div className="col-xl-10 col-lg-9 col-md-8">
+              <div className="row justify-content-md-center">
+                {toDoList}
               </div>
             </div>
           </div>
         </div>
-        
       </div>
     );
   }

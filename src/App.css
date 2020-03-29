@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   /*background: linear-gradient(to top, #ef473a, #cb2d3e);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, #FD746C, #2C3E50);
+  background: linear-gradient(to right, #FD746C -10%, #343A40 80%);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   min-height: 100vh;
 }
@@ -37,11 +37,21 @@ h3 {
   font-weight: 600;
 }
 
+.row{
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.card{
+  box-sizing: border-box;
+  margin: 4px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 
 @keyframes App-logo-spin {
   from {
