@@ -63,7 +63,7 @@ class Form extends Component {
                                   <option>hight</option>
                             </select>
                         </div>
-                        <button className="btn btn-lg btn-block btn-primary"
+                        <button className="btn btn-block btn-primary"
                             type="submit"> Save </button>
                    </form>
                 </div>
