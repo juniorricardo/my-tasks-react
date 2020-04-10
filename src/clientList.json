@@ -1,0 +1,133 @@
+{
+    "clients": [{
+            "gender": "male",
+            "name": {
+                "first": "Thomas",
+                "last": "Brown"
+            },
+            "document": "39202211",
+            "birthday": "1989-01-31",
+            "location": {
+                "street": {
+                    "number": 5718,
+                    "name": "Elgin St"
+                },
+                "city": "South River",
+                "state": "Yukon",
+                "country": "Canada",
+                "postcode": "N8V 2D5"
+            },
+            "phone": "673-455-3321",
+            "email": "thomas.brown@example.com",
+            "login": {
+                "username": "yellowbear171",
+                "password": "nikita"
+            },
+            "picture": "https://randomuser.me/api/portraits/men/63.jpg"
+
+        }, {
+            "gender": "female",
+            "name": {
+                "first": "Lillie",
+                "last": "Kihle"
+            },
+            "document": "38545857",
+            "birthday": "1994-03-18",
+            "location": {
+                "street": {
+                    "number": 6814,
+                    "name": "Bekkelistubben"
+                },
+                "city": "Vang",
+                "state": "Nordland",
+                "country": "Norway",
+                "postcode": "7658"
+            },
+            "phone": "51211988",
+            "email": "lillie.kihle@example.com",
+            "login": {
+                "username": "tinytiger380",
+                "password": "colonial"
+            },
+            "picture": "https://randomuser.me/api/portraits/med/women/42.jpg"
+
+        }, {
+            "gender": "male",
+            "name": {
+                "first": "Andree",
+                "last": "Westhoff"
+            },
+            "document": "36083827",
+            "birthday": "1997-07-06",
+            "location": {
+                "street": {
+                    "number": 2649,
+                    "name": "Mühlweg"
+                },
+                "city": "Bad Wörishofen",
+                "state": "Bremen",
+                "country": "Germany",
+                "postcode": 81316
+            },
+            "phone": "0354-3146674",
+            "email": "andree.westhoff@example.com",
+            "login": {
+                "username": "sadswan494",
+                "password": "sunshine"
+            },
+            "picture": "https://randomuser.me/api/portraits/men/4.jpg"
+
+        }, {
+            "gender": "male",
+            "name": {
+                "first": "Zoe",
+                "last": "Robinson"
+            },
+            "document": "38950939",
+            "birthday": "1994-03-20",
+            "location": {
+                "street": {
+                    "number": 951,
+                    "name": "Cranford Street"
+                },
+                "city": "Lower Hutt",
+                "state": "Gisborne",
+                "country": "New Zealand",
+                "postcode": 74325
+            },
+            "phone": "(362)-653-5224",
+            "email": "zoe.robinson@example.com",
+            "login": {
+                "username": "happyladybug599",
+                "password": "1029"
+            },
+            "picture": "https://randomuser.me/api/portraits/women/89.jpg"
+
+        }, {
+            "gender": "male",
+            "name": {
+                "first": "Maxime",
+                "last": "Gagnon"
+            },
+            "document": "44267281",
+            "birthday": "1996-06-25",
+            "location": {
+                "street": {
+                    "number": 2387,
+                    "name": "Frederick Ave"
+                },
+                "city": "Carleton",
+                "state": "Alberta",
+                "country": "Canada",
+                "postcode": "Z1W 4I1"
+            },
+            "phone": "984-232-4294",
+            "email": "maxime.gagnon@example.com",
+            "login": {
+                "username": "bluelion181",
+                "password": "fire"
+            },
+            "picture": "https://randomuser.me/api/portraits/men/98.jpg"
+        }
+    ]
+}
